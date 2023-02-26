@@ -17,8 +17,7 @@ export default () => {
       Dropcursor,
     ],
     content: `
-    <p>There are two images below. One with alt text, and one without.</p>
-    <img src="https://source.unsplash.com/8xznAGy4HcY/400x200" alt="Sandy hills with a foggy background" />
+    <p>The image below has no alt text.</p>
     <img src="https://source.unsplash.com/K9QHL52rE2k/400x200" />
   `,
   })
