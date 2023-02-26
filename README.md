@@ -1,2 +1,16 @@
 # tiptap-image-alt-text
-WIP
+
+Install dependencies
+```
+npm run install
+```
+
+Run dev server
+```
+npm run dev
+```
+
+Build for deployment
+```
+npm run build
+```
