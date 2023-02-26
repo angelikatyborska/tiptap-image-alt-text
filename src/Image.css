@@ -1,3 +1,40 @@
 .image {
   width: fit-content;
+  position: relative;
+}
+
+.image .alt-text-indicator {
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  max-width: calc(100% - 20px);
+  padding: 0 0.5em;
+  border: 1px solid #242424;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  gap: 0.25em;
+}
+
+.image .alt-text-indicator .symbol {
+  flex: 0 0 auto;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.image .alt-text-indicator .symbol-positive {
+  color: #19961b;
+}
+
+.image .alt-text-indicator .symbol-negative {
+  color: #961f1f;
+}
+
+.image .alt-text-indicator .text {
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

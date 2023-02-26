@@ -11,6 +11,16 @@ function ImageNode(props: NodeViewWrapperProps) {
   return (
     <NodeViewWrapper className={className} data-drag-handle>
       <img src={src} alt={alt} />
+      <span className="alt-text-indicator">
+        { alt ?
+            <span className="symbol symbol-positive">✔</span> :
+            <span className="symbol symbol-negative">!</span>
+        }
+        { alt ?
+          <span className="text">Alt text: "{alt}".</span>:
+          <span className="text">Alt text missing.</span>
+        }
+      </span>
     </NodeViewWrapper>
   )
 }
