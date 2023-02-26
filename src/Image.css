@@ -38,3 +38,14 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+.image .alt-text-indicator .edit {
+  flex: 0 0 auto;
+
+  border: 0;
+  padding: 0;
+  background: transparent;
+  appearance: none;
+
+  text-decoration: underline;
+}

@@ -3,10 +3,16 @@ import { NodeViewWrapper, NodeViewWrapperProps, ReactNodeViewRenderer } from '@t
 import './Image.css'
 
 function ImageNode(props: NodeViewWrapperProps) {
+  const { updateAttributes } = props
   const { src, alt } = props.node.attrs
 
   let className = 'image'
   if (props.selected) { className += ' ProseMirror-selectednode'}
+
+  const onEditAlt = () => {
+    const newAlt = prompt('Set alt text:', alt || '')
+    updateAttributes({alt: newAlt})
+  }
 
   return (
     <NodeViewWrapper className={className} data-drag-handle>
@@ -20,6 +26,10 @@ function ImageNode(props: NodeViewWrapperProps) {
           <span className="text">Alt text: "{alt}".</span>:
           <span className="text">Alt text missing.</span>
         }
+
+        <button className="edit" type="button" onClick={onEditAlt}>
+          Edit
+        </button>
       </span>
     </NodeViewWrapper>
   )
