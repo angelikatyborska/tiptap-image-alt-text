@@ -29,7 +29,7 @@ export default () => {
 
   return (
     <div className="editorWrapper">
-      <h1>TipTap Image Alt Text demo</h1>
+      <h1>TipTap Image Alt Text Demo</h1>
       <EditorContent editor={editor} />
     </div>
   )
