@@ -1,11 +1,11 @@
 import Document from '@tiptap/extension-document'
 import Dropcursor from '@tiptap/extension-dropcursor'
-import Image from '@tiptap/extension-image'
 import Paragraph from '@tiptap/extension-paragraph'
 import Text from '@tiptap/extension-text'
 import { EditorContent, useEditor } from '@tiptap/react'
 import React from 'react'
 import './App.css'
+import CustomImage from './Image'
 
 export default () => {
   const editor = useEditor({
@@ -13,7 +13,7 @@ export default () => {
       Document,
       Paragraph,
       Text,
-      Image,
+      CustomImage,
       Dropcursor,
     ],
     content: `
